@@ -4,3 +4,73 @@
   margin: 0;
   border: none;
 }
+a {
+  color: inherit;
+}
+
+:root {
+  --background: rgb(249, 250, 251);
+  --form-background: white;
+  --accent: #596C48;
+  --border: #E5E7EB;
+
+  font-size: 26px;
+}
+@font-face {
+  font-family: 'Norse Bold';
+  src: url(Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+
+  height: 100vh;
+}
+
+aside {
+  flex: 12;
+  background-image: url(background-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.logo-container {
+  background-color: rgba(0, 0, 0, 50%);
+  
+  margin-top: 40%;
+  height: 5rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-container > h1 {
+  color: white;
+  font-family: 'Norse Bold';
+  font-size: 3rem;
+
+  position: relative;
+  top: 0.5rem;
+}
+.logo-container > img {
+  height: 80%;
+}
+
+aside > p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-size: 0.5rem;
+  color: #E2E6DA;
+}
+
+main {
+  flex: 21;
+}
